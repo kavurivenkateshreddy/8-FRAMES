@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FRAMES</title>
+</head>
+<body>
+    <P><H1><center><font color="red"><u>FRAMES</u></font></center></H1></P>
+    <P>---> HTML frames are used to divide your browser window into multiple sections where each section can load a separate HTML document.</P>
+    <P>---> A collection of frames in the browser window is known as a frameset. </P>
+    <p>---> The window is divided into frames in a similar way the tables are organized: into rows and columns.</P>
+        <P><h2>To Creating a frameset</h2></P>
+        <p>---> To use frames on a page we use &lt frameset &gt tag instead of &lt body &gt tag.</p>
+        <p>---> The &lt frameset> tag defines how to divide the window into frames.</p> 
+        <p>---> The rows attribute of &lt frameset &gt tag defines horizontal frames and colsattribute defines vertical frames.</p> 
+        <p>---> Each frame is indicated by &lt frame &gt tag and it defines which HTML document shall open into the frame.</p>
+    <P><h2>There are Two Tags in Frames</h2></P>
+    <p>They are :</p>
+    <p><ol type="1">
+        <li>&lt farmeset &gt</li>
+         <li>&lt farms &gt</li>
+    </ol></p>
+
+    <P><h1><font color="blue">1.&lt farmeset &gt</font></h1></P>
+    <p>---> The & frameset &gt tag is used to divide the window into frame. with rows and columns.</p>
+    <P><h2><font color="pink">Attributes in &lt farmeset &gt</font></h2></P>
+    <p><ol type="1" >
+        <li><font color="green"><h3>ROWS :</h3></font></li>---> It will divide the frame into rows.
+        <p>---> EX : &lt frameset rows='20%,30%,50%" &gt</p>
+        <li><font color="green"><h3>COLUMNS :</h3></font></li>
+        <P>---> It will divide the frame into columns.</P>
+        <P>---> EX : &lt frameset cols='20%,30%,50%" &gt</P>
+        <li><font color="green"><h3>BORDER :</h3></font></li>
+        <P>---> This attribute specifies the width of the border of each frame inpixels.</P>
+        <P>---> EX : &lt frameset border="5" &gt. A value of zero means no border.</P>
+        <li><font color="green"><h3>FRAME BORDER :</h3></font></li>
+        <P>---> This attribute specifies whether a three-dimensional border should be displayed between frames.</P>
+        <P>---> This attrubute takes value either 1 yes or 0 no.</P> 
+        <P>---> EX : &lt frameset frameborder="0" &gt specifies no border.</P>
+        <li><font color="green"><h3>FRAME SPACING :</h3></font></li>
+        <p>---> This attribute specifies the amount of space between frames in a frameset. This can take any integer value.</p>
+        <P>---> EX : &lt frameset framespacing="10" &gt means there should be 10 pixels spacing between each frames.</p>
+    </ol></p>
+
+
+    <P><h1><font color="blue">2.&lt frame &gt</font></h1></P>
+    <p>Here the &lt frame &gt tag is defines which HTML document will open into that frame.</p>
+    <P><h2><font color="pink">Attributes in &lt farme &gt</font></h2></P>
+    <p><ol type="1" >
+        <li><font color="green"><h3>SRC :</h3></font></li>
+        <P>---> This attribute is used to give the file name that should be loaded in the frame. Its value can be any URL.</P>
+        <P>---> EX : &lt frame src="/htmlframe.htm" &GT will load an HTML file available in html directory</P>
+        <li><font color="green"><h3>NAME :</h3></font></li>
+        <P>---> This attribute allows you to give a name to a frame. It is used to indicate which frame a document should be loaded into.</P>
+        <P>---> This is especially important when you want to create links in one frame that load pages into an another frame,</P>
+        <P>---> In which case the second frame needs a name to identify itself as the target of the link.</P>
+        <P>---> EX : &lt frame src="/htmlframe.htm"  Name="name of file" &GT</P>
+        <li><font color="green"><h3>MARGINE WIDTH :</h3></font></li>
+        <P>---> This attribute allows you to specify the width of the space between the left and right of the frame's borders and the frame's content.</P>
+        <P>---> The value is given in pixels.</P>
+        <P>---> EX : &lt frame marginwidth="10" &gt.</P>
+        <li><font color="green"><h3>MARGINE HIGHT :</h3></font></li>
+        <p>---> This attribute allows you to specify the height of the space between the top and bottom of the frame's borders and its contents.</p>
+        <p>---> The value is given in pixels.</p>
+        <p>---> EX : &lt frame marginheight="10" &gt.</p>
+        <li><font color="green"><h3>NORESIZE :</h3></font></li>
+        <P>---> By default you can resize any frame by clicking and dragging on the borders of a frame.
+        <P>---> The noresize attribute prevents a user from being able to resize the frame.</P>
+        <P>---> EX : &lt frame noresize="noresize" &gt.</P>
+        <li><font color="green"><h3>SCROLLING :</h3></font></li>
+        <p>---> This attribute controls the appearance of the scrollbars that appear on the frame.</p>
+        <p>---> This takes values either "yes", "no" or "auto".</p>
+        <p>---> EX :  &lt frame scrolling="no" &gt means it should not havescroll bars.</p>
+        <li><font color="green"><h3>LONGDESC :</h3></font></li>
+        <P>---> This attribute allows you to provide a link to another page containing a long description of the contents of the frame.</P>
+        <P>---> EX : &lt frame longdesc="framedescription.htm" &gt</P>
+    </ol></p>
+    <P><H1><center><font color="red"><u>EXAMPLE  CODE FOR FRAMES : </u></font></center></H1></P>
+    <p> &lt html &gt</p>
+    <p> &lt frameset rows="20%,30%,50%" border="0" &gt</p>
+    <p>---> &lt frame cols="30%,70%" &gt</p>
+    <p>-------> &lt frame src="html.jpg" name="c1' &gt</p>
+    <p>-------> &lt frame src="header.html" name="c2' &gt</p>
+    <p>---> &lt/ frameset &gt </p>
+    <p>---> &lt frame cols="30%,70%" border="0" &gt</p>
+    <p>-------> &lt frame src="menu.html" name="left frame" &gt</p>
+    <p>-------> &lt frame src="main.html" name="main" &gt</p>
+    <p>---> &lt/ frameset &gt </p>
+    <p>---> &lt frame src="footer.html" name="foort" &gt</p>
+    <p> &lt/ frameset &gt</p>
+    <p> &lt/ html &gt</p>
+</body>
+</html>
